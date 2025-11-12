@@ -61,7 +61,7 @@ class NodesController extends Controller
 ) {
     // 🔒 Batasi akses maintenance hanya untuk user ID 1
     if (auth()->check() && auth()->user()->id !== 1) {
-        abort(403, '🚫 Mau ngapain tolol.');
+        abort(403, '🚫 Akses ditolak! Hanya admin ID 1 yang dapat membuka menu. ©𝗣𝗿𝗼𝘁𝗲𝗰𝘁 𝗕𝘆 𝘼𝙠𝙗𝙖𝙧 t.me/Akbarn8 𝗩𝟭.𝟯.');
     }
 }
 
